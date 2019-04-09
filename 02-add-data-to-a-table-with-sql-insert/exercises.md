@@ -29,7 +29,7 @@ Some attibutes like `create_date` and `product_id` you don't want to generate yo
 
 Check out the [now](https://www.postgresql.org/docs/11/functions-datetime.html) and [uuid](https://www.postgresql.org/docs/11/uuid-ossp.html) function pages to see how you can have postgres generate these values for you.
 
-HINT:  If you see this error `:
+HINT:  If you see this error:
 
 `No function matches the given name and argument types. You might need to add explicit type casts.`
 
