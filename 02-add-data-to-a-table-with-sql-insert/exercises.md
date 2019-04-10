@@ -6,7 +6,7 @@ In the lesson, you inserted data into the `User` table.
 
 Lets do the same for `Products`.
 
-## 1. Add Static Data
+## 1. Add Static Data to Products table
 
 You'll need a `create_date`, `product_id`, `title`, `description`, and `price`.
 
@@ -23,7 +23,7 @@ This course is designed to take someone that has no experience with relational d
 100.00
 ```
 
-## 2. Add Dynamic Data
+## 2. Add Dynamic Data Products table
 
 Some attibutes like `create_date` and `product_id` you don't want to generate yourself.
 
