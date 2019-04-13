@@ -1,6 +1,6 @@
 # Create a Table with SQL Create Exercises 
 
-All database's have recognized Types that are accepted. `Boolean` and `int` are two common types accepted in many relational database's such as Postgres or MySQL
+All databases have recognized Types that are accepted. `Boolean` and `int` are two common types accepted in many relational database's such as Postgres or MySQL
 
 Explore some of the types available to you [here](https://www.postgresql.org/docs/9.5/datatype.html).
 
