@@ -8,7 +8,7 @@ Lets do the same for `Products`.
 
 ## 1. Add Static Data to Products table
 
-You'll need a `create_date`, `product_id`, `title`, `description`, and `price`.
+You'll need a `create_date`, `product_id`, `title`, `description`, `price`, and `technology`.
 
 Here's some data you can use:
 ```
@@ -21,6 +21,8 @@ sql fundamentals course
 This course is designed to take someone that has no experience with relational databases and teach them how to at least create, read, update, and delete.
 
 100.00
+
+sql
 ```
 
 ## 2. Add Dynamic Data Products table
