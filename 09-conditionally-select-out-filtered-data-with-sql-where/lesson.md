@@ -1,4 +1,4 @@
-### Step 6 - Filtering Data
+# Step 9 - Filtering Data
 
 ## Filter on last name
 ```

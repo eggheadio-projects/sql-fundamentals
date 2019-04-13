@@ -1,4 +1,4 @@
-### Step 8 - Joining Tables
+# Step 10 - Joining Tables
 
 
 ## Create a new table

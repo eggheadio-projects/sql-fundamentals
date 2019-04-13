@@ -1,4 +1,4 @@
-# Step 7 - Aggregate functions and grouping data
+# Step 8 - Aggregate functions and grouping data
 
 ## Find the lowest value create_date in Table
 ```

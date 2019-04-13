@@ -1,4 +1,4 @@
-## Adding Data
+# 2 - Adding Data
 
 ### Create a Users Table
 ```sql

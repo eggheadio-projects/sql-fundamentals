@@ -1,4 +1,4 @@
-### Step 11 - Working with Constraints
+# Step 6 - Working with Constraints
 
 ## Create a Users table with Primary key set to user_handle
 ```

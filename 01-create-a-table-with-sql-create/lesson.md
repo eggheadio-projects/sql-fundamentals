@@ -1,4 +1,4 @@
-## Step 1 - Creating a Table
+# Step 1 - Creating a Table
 
 ### Create a Users Table
 ```sql

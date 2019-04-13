@@ -1,4 +1,4 @@
-### Step 9 - Working with Indexes
+# Step 7 - Working with Indexes
 
 ## Create an index on the Users Table
 ```
