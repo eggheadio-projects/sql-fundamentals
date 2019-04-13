@@ -1,20 +1,11 @@
-### Step 6 - Working with Constraints
+### Step 6 - Filtering Data
 
+## Filter on last name
 ```
-create table Users (
-    create_date date,
-    user_handle uuid,
-    last_name text,
-    first_name text,
-    constraint PK_Users primary key (user_handle)
-);
+select create_date, last_name, first_name from Users where  last_name = 'clark';
 ```
 
+## Filter on a Date Range
 ```
-create table Users (
-    create_date date not null,
-    user_handle uuid not null unique,
-    last_name text,
-    first_name text not null
-);
+select * from Users where create_date between '2018-05-01' and '2018-09-01';
 ```

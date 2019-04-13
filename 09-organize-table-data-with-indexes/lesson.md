@@ -1,8 +1,6 @@
-### Step 9 - Filtering Data
+### Step 9 - Working with Indexes
 
+## Create an index on the Users Table
 ```
-select create_date, last_name, first_name from Users where  last_name = 'clark';
-```
-```
-select * from Users where create_date between '2018-05-01' and '2018-09-01';
+create index test1_user_handle_index ON Users (user_handle);
 ```

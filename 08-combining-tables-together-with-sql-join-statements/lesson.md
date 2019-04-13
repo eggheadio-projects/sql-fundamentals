@@ -1,13 +1,22 @@
-### Step 8 - Aggregate functions and grouping data
+### Step 8 - Joining Tables
 
-```
-select min(create_date), last_name, first_name from Users;
-```
 
-```
-select max(create_date), last_name, first_name from Users;
+## Create a new table
+```sql
+create table Purchases (date date, user_handle uuid, sku uuid, quantity int);
 ```
 
+## Create a row of data with user_handle
+```sql
+insert into Purchases (date, user_handle, sku, quantity) values ('2018-12-12', 'a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11', uuid_generate_v4(), 2);
 ```
-select count(*), last_name from Users group by last_name;
+
+## Create a row of data with random id's
+```sql
+insert into Purchases values ('2019-02-02', uuid_generate_v4(), uuid_generate_v4(), 1);
+```
+
+## Combine the User and Purchases table
+```sql
+select * from Users u left outer join Purchases ua on u.email = ua.email;
 ```

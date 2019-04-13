@@ -1,17 +1,10 @@
-### Step 10 - Joining Tables
+### Step 10 - Subqueries
 
-```
-create table Purchases (date date, user_handle uuid, sku uuid, quantity int);
-```
-
-```
-insert into Purchases (date, user_handle, sku, quantity) values ('2018-12-12', 'a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11', uuid_generate_v4(), 2);
+```sql
+select u.total, u.create_date, first_name from Users us inner join (select count(create_date) as total, create_date from Users group by create_date) u on u.create_date = us.create_date;
 ```
 
-```
-insert into Purchases values ('2019-02-02', uuid_generate_v4(), uuid_generate_v4(), 1);
-```
-
-```
-select * from Users u left outer join Purchases ua on u.email = ua.email;
+## Return the first created User
+```sql
+select create_date, first_name from Users where create_date = (select min(create_date) from Users);
 ```
