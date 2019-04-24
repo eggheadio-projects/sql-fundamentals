@@ -1,6 +1,6 @@
 # Step 6 - Working with Constraints
 
-## Create a Users table with Primary key set to user_handle
+### Create a Users table with Primary key set to user_handle
 ```
 create table Users (
     create_date date,
@@ -11,7 +11,7 @@ create table Users (
 );
 ```
 
-## Create a Users table where no values can be null (except `last_name`) and the `user_handle` as unique
+### Create a Users table where no values can be null (except `last_name`) and the `user_handle` as unique
 ```sql
 create table Users (
     create_date date not null,
@@ -21,12 +21,12 @@ create table Users (
 );
 ```
 
-## Create a table with a foreign key
+### Create a table with a foreign key
 ```sql
 create table Purchases (
   date date not null, 
   user_handle uuid references Users (user_handle),
   sku uuid not null,
-  quantity int not null, 
-); 
+  quantity int not null
+);
 ```
