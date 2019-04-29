@@ -25,3 +25,16 @@ Type "help" for help.
 
 $ postgres=# 
 ```
+
+### Lesson Errata
+if you see this error: 
+```text
+psql: could not connect to server: No such file or directory
+  Is the server running locally and accepting
+  connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+```
+
+Run: 
+`brew serices start postgresql`
+
+If the error persists, it is likely that you have two versions of postgres running on your machine. Run this command to upgrade postgres via brew: `brew postgresql-upgrade-database`.

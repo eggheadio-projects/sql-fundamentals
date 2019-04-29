@@ -18,12 +18,12 @@ insert into Users (create_date, user_handle, last_name, first_name ) values ('20
 
 With built in postgres functions: 
 ```sql
-insert into Users (create_date, user_handle, last_name, first_name ) values (now(), uuid_generate_v4(), 'johnson', 'patrick');
+insert into Users (create_date, user_handle, last_name, first_name ) values (now(), 'a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11', 'johnson', 'patrick');
 ```
 
 Shorthand:
 ```sql
-insert into Users values (now(), uuid_generate_v4(), 'jones', 'zac');
+insert into Users values (now(), 'a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11', 'jones', 'zac');
 ```
 
 

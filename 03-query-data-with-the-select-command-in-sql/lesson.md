@@ -1,6 +1,6 @@
 # Step 3 - Selecting Data
 
-## Set up
+### Set up
 ```sql
 create table Users (
     create_date date,
@@ -14,7 +14,7 @@ create table Users (
 insert into Users (create_date, user_handle, last_name, first_name ) values ('2018-06-06', 'a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11', 'clark', 'tyler');
 ```
 
-## Select all rows from Users Table
+### Select all rows from Users Table
 ```
 select * from Users;
 ```
@@ -25,7 +25,7 @@ select * from Users;
 
 ---
 
-## Select all rows and current time from Users
+### Select all rows and current time from Users
 ```
 select first_name, last_name, current_time from Users;
 ```
@@ -35,7 +35,7 @@ select first_name, last_name, current_time from Users;
 | debbie     | jones     | 14:24:36.817649+00 |
 
 ---
-## Rename attributes on select
+### Rename attributes on select
 ```
 select first_name as FirstName, last_name as LastName, current_time as today from Users;
 ```
@@ -46,7 +46,7 @@ select first_name as FirstName, last_name as LastName, current_time as today fro
 
 ---
 
-## Select all rows with distinct last name
+### Select all rows with distinct last name
 ```
 select distinct(last_name) from Users;
 ```
@@ -57,7 +57,7 @@ select distinct(last_name) from Users;
 
 ---
 
-## Run aggregate functions on select statement
+### Run aggregate functions on select statement
 ```sql
 select count(distinct(last_name)) from Users;
                       
