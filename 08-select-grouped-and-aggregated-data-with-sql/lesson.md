@@ -7,7 +7,7 @@ select min(create_date) from Users;
 
 ### Find the highest value create_date in Table
 ```
-select max(create_date), last_name, first_name from Users;
+select max(create_date) from Users;
 ```
 
 ### Count all users with the same last name
