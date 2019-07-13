@@ -35,6 +35,6 @@ psql: could not connect to server: No such file or directory
 ```
 
 Run: 
-`brew serices start postgresql`
+`brew services start postgresql`
 
 If the error persists, it is likely that you have two versions of postgres running on your machine. Run this command to upgrade postgres via brew: `brew postgresql-upgrade-database`.
